@@ -54,8 +54,8 @@ public:
 	{
 		bool check = false;
 		int index = 0;
-		int l = strlen(myStr);
-		int l2 = strlen(strToFind);
+		int l = strlength(myStr);
+		int l2 = strlength(strToFind);
 
 		for (int i = 0; i < l || myStr[i] != '\0'; i++)
 		{
@@ -1278,7 +1278,7 @@ public:
 				while (1)
 				{
 					fin >> temp;
-					if (strcmp(temp, "-1") == 0)
+					if (Helper::stringcmp(temp, "-1") == 0)
 					{
 						break;
 					}
